@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(246, 255, 0);
+}
+
+.logo {
+    position: absolute;
+    top: 5vh;
+    left: 4%;
+    width: 10%;
+    transition: filter 0.2s ease-in;
+}
+
+.logo:hover {
+    filter: invert(120%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 10vw;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2vw;
+}
+
+.box1 {
+    position: absolute;
+    top: 30vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2vw;
+    margin: 4vw;
+}
+
+.my {
+    width: 100%;
+}
+
+.box2 {
+    position: absolute;
+    top: 50vh;
+    left: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 2vw;
+}
+
+.WAVE {
+    position: relative;
+}
+
+.WAVE h3 {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .WAVE h3 {
+        position: static;
+        margin-bottom: 10px;
+    }
+}
+
+.MEN {
+    position: relative;
+}
+
+.MEN h3 {
+    position: absolute;
+    top: -30px;
+    left: 80px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .MEN h3 {
+        position: static;
+        margin-bottom: 10px;
+    }
+}
+
+.YOURA {
+    position: relative;
+}
+
+.YOURA h3 {
+    position: absolute;
+    top: -30px;
+    left: 430px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .YOURA h3 {
+        position: static;
+        margin-bottom: 10px;
+    }
+}
+
+.DVD4 {
+    position: relative;
+}
+
+.DVD4 h3 {
+    position: absolute;
+    top: -30px;
+    left: 780px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .DVD4 h3 {
+        position: static;
+        margin-bottom: 10px;
+    }
+}

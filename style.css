@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'ppopin';
+    src: url('Poppins.ttf');
+}
+
+h6{
+    font-family: 'ppopin';
+    font-size: 40px;
+}
+
+h5{
+    font-size: 40px;
+}
+
+
+body{
+    background-color:rgb(246, 255, 0);
+    
+
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 5vh;
+    padding: 5px;
+    font-size: 40px;
+    width: 100%;
+    z-index: 9999;
+  }
+
+.folder {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 80vh;
+    left: 0%;
+    padding: 5px;
+    font-size: 40px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: -2;
+  }
+
+  .folder.fade-out {
+    opacity: 0;
+  }
+  
+.wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+}
+  
+
+.headercc{
+    color: rgb(72, 255,0);
+    top: 30vh;
+    left: 0;
+    width: 100%;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.foldercc{
+    color: rgb(0, 255, 0);
+    top: 80vh;
+    left: 0;
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.guava {
+    position: absolute;
+    top: -5vh;
+    left: 30%;
+    width: 1000px;
+    z-index: 2;
+}
+
+h1{
+    color: rgb(60, 60, 60);
+}
+
+.NEWS {
+    position: absolute;
+    top: 38vh;
+    left: 3%;
+    width: 140px;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    font-size: 220%;
+    text-decoration: none;
+    transition: transform 0.5s ease, color 0.5s ease;
+    display: inline-block; /* 讓元素成為行內塊元素，使寬度變化生效 */
+}
+
+.NEWS:hover {
+    color: #00ff5e; /* 顏色淡入效果，這裡使用綠色作為範例 */
+    transform: scale(1.2); /* 文字放大 1.5 倍 */
+  }
+
+.ARTISTS {
+    position: absolute;
+    top: 48vh;
+    left: 3%;
+    width: 140px;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    font-size: 220%;
+    text-decoration: none;
+    transition: transform 0.5s ease, color 0.5s ease;
+    display: inline-block; /* 讓元素成為行內塊元素，使寬度變化生效 */
+  }
+
+  .ARTISTS:hover {
+    color: #00ff5e; /* 顏色淡入效果，這裡使用綠色作為範例 */
+    transform: scale(1.2); /* 文字放大 1.5 倍 */
+  }
+
+.RELEASES {
+    position: absolute;
+    top: 58vh;
+    left: 3%;
+    width: 140px;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    font-size: 220%;
+    text-decoration: none;
+    transition: transform 0.5s ease, color 0.5s ease;
+    display: inline-block;
+}
+
+.RELEASES:hover {
+    color: #00ff5e;
+    transform: scale(1.2); 
+  }
+
+.logo{
+    position: absolute;
+    top: 20vh;
+    left: 1.5%;
+    width: 10%;
+}
+
+.green{
+    position: absolute;
+    top: 165vh;
+    left: 80%;
+    width: 300px;
+}
+
+.SPECIAL {
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    font-size:180px;
+    font-weight: bold;
+    text-align: center;
+    z-index: -3; /* 小於0沉下去、大於0浮上來 */ 
+}
+
+.player-wrap{
+    position: relative;
+}
+
+.player-wrap .player-control{
+    position: absolute;
+    top: 32vh;
+    left: 33%;
+    width: 400px;
+    height: 230px;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.player-wrap .player-info{
+    width: 230px;
+    height: 70px;
+    position: absolute;
+    top: 25vh;
+    left: 33%;
+    padding: 10px;
+    transform: translateX(-50);
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.player-info .info{
+    width: 60%;
+    font-size: 20px;
+}
+
+.player-info .name {
+    font-size: 18px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.singer{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.player-control .cover{
+    position: absolute;
+    top: 31vh;
+    left: 33%;
+    width: 400px;
+    height: 240px;
+}
+
+.stop{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cover img{
+    position: absolute;
+    top: 31vh;
+    left: 33%;
+    width: 250px;
+    height: 250px;
+
+}
+
+.box{
+    position: absolute;
+    top: 100vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   column-gap: 1px;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px 0px 30px 0px;
+}
+
+.descrpition h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.descrpition p{
+    font-size: 20px;
+}
+
+.seasons{
+    width: 80%;
+  
+}
+
+.dream{
+    width: 50%;
+    padding: 20px;
+}
+
+.box1{
+    position: absolute;
+    top: 140vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px -10px 30px 0px;
+}
+
+.my{
+    width: 80%;
+  
+}
+
+.box2{
+    position: absolute;
+    top: 180vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px -10px 30px 0px;
+}
+
+.on {
+    width: 80%;
+}
+
+.box3{
+    position: absolute;
+    top: 220vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px -10px 30px 0px;
+}
+
+.HYBS{
+    width: 80%;
+  
+}
