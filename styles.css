@@ -1,0 +1,339 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+body {
+    background-color:rgb(246, 255, 0);
+}
+
+/*.hero-section {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #e3e3e3;
+}
+
+.hero-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 50%;
+    background: url(hero-img.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}*/
+
+.brand-logo {
+    position: fixed;
+    top: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+ion-icon {
+    font-size: 40px;
+}
+.open-menu{   
+    position: absolute;
+    top: 20vh;
+    left: 3vh;
+    width: 25vh;
+    height: 25vh;
+    background: url(logo.png) no-repeat 5% 10%;
+    background-size: contain;
+    z-index: 3;
+    transition: filter 0.2s ease-in;
+}
+.open-menu:hover {
+    filter: invert(120%);
+}
+
+.close-menu {
+    position: absolute;
+    margin: 2em;
+    top: 0vh;
+    left: 0;
+}
+
+.menu-container {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    left: -100%;
+    z-index: 4;
+    background: rgb(255, 255, 246);
+}
+
+.menu-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(246, 255, 0, 0.831);
+    margin: 10px 0;
+    padding: 30px 0 16px 0;
+}
+
+.menu-links .link a {
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 900px) {
+    .menu-container {
+        width: 100%;
+        right: -100%;
+    }
+
+    .brand-logo {
+        width: 100%;
+    }
+
+    .menu-links .link a {
+        font-size: 24px;
+        padding: 10px 0 16px 0;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+}
+
+
+@keyframes tada {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+.marquee{
+    position: fixed;
+    top: 5vh;
+    width: 100%;
+    margin: 0auto;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1;
+}
+.marquee span{
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 255, 0);
+    font-size: 3em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: -10%;
+    animation: marquee-animation 80s linear infinite;
+    z-index: 1;
+}
+.marquee-1.fade-out {
+    opacity: 0;
+  }
+.marquee-1{
+    position: fixed;
+    top: 80vh;
+    width: 100%;
+    margin: 0auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+}
+.marquee-1 span{
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 255, 0);
+    font-size: 3em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: -10%;
+    animation: marquee-animation 80s linear infinite;
+    z-index: -1;
+}
+@keyframes marquee-animation{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+h1{
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0vh;
+    left: 0;
+    width: 100%;
+    font-size: 25vh;
+    font-weight: bold;
+    text-align: center;
+    z-index: -3;
+}
+h6{
+    font-family: 'ppopin';
+    font-size: 40px;
+}
+h5{
+    font-size: 40px;
+}
+
+.guava {
+    margin-top: 0%;
+    width: 100%;
+    margin: 0auto;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 99;
+}
+.guava img {   
+    width: 120vh;
+    height: 90%;
+    object-fit: cover;
+    margin-left: 30%;  
+    z-index: 99; 
+}
+.green {
+    width: 22%;
+    margin-top: 80vh;
+    margin-left: 75%;
+    z-index: 3; 
+
+}
+.green img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3; 
+}
+.SPECIAL {
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    font-size:180px;
+    font-weight: bold;
+    text-align: center;
+    z-index: -3; /* 小於0沉下去、大於0浮上來 */ 
+}
+.descrpition h3{
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.descrpition p{
+    font-size: 100%;
+}
+
+.seasons{
+    width: 80%;
+  
+}
+
+.dream{
+    width: 50%;
+    padding: 20px;
+}
+
+.box{
+    position: absolute;
+    top: 100vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px -10px 30px 0px;
+    width: 100%;
+    z-index: -2; 
+}
+.box1{
+    position: absolute;
+    top: 140vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px -10px 30px 0px;
+    width: 100%;
+    z-index: -2; 
+}
+.box2{
+    position: absolute;
+    top: 180vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px -10px 30px 0px;
+    width: 100%;
+    z-index: -2; 
+}
+.box3{
+    position: absolute;
+    top: 220vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 30px -10px 30px 0px;
+    width: 100%;
+    z-index: -2; 
+}
+
+.my{
+    width: 80%;
+  
+}
+
+.on {
+    width: 80%;
+}
+
+.HYBS{
+    width: 80%; 
+}

@@ -1,3 +1,21 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    color: #000;
+    background-color: rgb(246, 255, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.width-full, body, html {
+    width: 100%;
+}
+
+
+
 body {
     background-color: rgb(246, 255, 0);
 }
@@ -6,8 +24,9 @@ body {
     position: absolute;
     top: 5vh;
     left: 4%;
-    width: 10%;
+    width: 200px;
     transition: filter 0.2s ease-in;
+    
 }
 
 .logo:hover {
@@ -16,10 +35,10 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 10vw;
+    font-size: 11vh;
     font-weight: bold;
     font-style: italic;
-    padding: 2vw;
+    padding: 1vw;
 }
 
 .box1 {
