@@ -9,6 +9,7 @@ body {
 
 body {
     background-color:rgb(246, 255, 0);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*.hero-section {
@@ -32,7 +33,7 @@ body {
 .brand-logo {
     position: fixed;
     top: 80px;
-    width: 50%;
+    width: 37%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +66,7 @@ ion-icon {
 
 .menu-container {
     position: fixed;
-    width: 50%;
+    width: 37%;
     height: 100vh;
     left: -100%;
     z-index: 4;
@@ -96,34 +97,13 @@ ion-icon {
 }
 
 .menu-links .link a {
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
+    font-style: oblique;
     color: rgb(0, 0, 0);
 }
-
-@media (max-width: 900px) {
-    .menu-container {
-        width: 100%;
-        right: -100%;
-    }
-
-    .brand-logo {
-        width: 100%;
-    }
-
-    .menu-links .link a {
-        font-size: 24px;
-        padding: 10px 0 16px 0;
-    }
-
-    .social-media {
-        width: 100%;
-    }
-
-}
-
 
 @keyframes tada {
     0% {
@@ -209,10 +189,11 @@ h1{
     font-size: 25vh;
     font-weight: bold;
     text-align: center;
+    font-style: italic;
+    transform: scaleX(1.2);
     z-index: -3;
 }
 h6{
-    font-family: 'ppopin';
     font-size: 40px;
 }
 h5{
@@ -222,22 +203,22 @@ h5{
 .guava {
     margin-top: 0%;
     width: 100%;
-    margin: 0auto;
     white-space: nowrap;
     overflow: hidden;
     z-index: 99;
 }
 .guava img {   
-    width: 120vh;
-    height: 90%;
+    width: 150vh;
+    height: 80%;
     object-fit: cover;
-    margin-left: 30%;  
+    margin-left: 20%;  
+    margin-top: -5%;
     z-index: 99; 
 }
 .green {
     width: 22%;
-    margin-top: 80vh;
-    margin-left: 75%;
+    margin-top: -30vh;
+    margin-left: 40%;
     z-index: 3; 
 
 }
@@ -247,7 +228,7 @@ h5{
     object-fit: cover;
     z-index: 3; 
 }
-.SPECIAL {
+/* .SPECIAL { 
     color: rgb(0, 0, 0);
     position: fixed;
     top: 20vh;
@@ -256,8 +237,7 @@ h5{
     font-size:180px;
     font-weight: bold;
     text-align: center;
-    z-index: -3; /* 小於0沉下去、大於0浮上來 */ 
-}
+    z-index: -3;}*/ /* 小於0沉下去、大於0浮上來 */ 
 .descrpition h3{
     font-size: 100%;
     font-weight: bold;
@@ -265,6 +245,11 @@ h5{
 
 .descrpition p{
     font-size: 100%;
+}
+
+.descrpition1 p{
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.831);
 }
 
 .seasons{
@@ -277,7 +262,7 @@ h5{
     padding: 20px;
 }
 
-.box{
+/* .box{ 
     position: absolute;
     top: 100vh;
     left: 0%;
@@ -287,8 +272,36 @@ h5{
     margin: 30px -10px 30px 0px;
     width: 100%;
     z-index: -2; 
+}*/
+.box {
+
+    margin-top: 20%;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0vw;
+
+    background-color: rgba(255, 255, 255, 0.831);
 }
-.box1{
+.box1 {
+
+    margin-top: 10%;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0vw;
+    background-color: rgba(255, 255, 255, 0.831);
+}
+/* .box1 { 
+    position: absolute;
+    top: 30vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2vw;
+    margin: 4vw;
+}*/
+/* .box1{ 
     position: absolute;
     top: 140vh;
     left: 0%;
@@ -299,8 +312,8 @@ h5{
     margin: 30px -10px 30px 0px;
     width: 100%;
     z-index: -2; 
-}
-.box2{
+}*/
+/* .box2{ 
     position: absolute;
     top: 180vh;
     left: 0%;
@@ -311,8 +324,17 @@ h5{
     margin: 30px -10px 30px 0px;
     width: 100%;
     z-index: -2; 
+}*/
+.box2 {
+
+    margin-top: 10%;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0vw;
+    background-color: rgba(255, 255, 255, 0.831);
 }
-.box3{
+/* .box3{ 
     position: absolute;
     top: 220vh;
     left: 0%;
@@ -323,6 +345,15 @@ h5{
     margin: 30px -10px 30px 0px;
     width: 100%;
     z-index: -2; 
+}*/
+.box3 {
+
+    margin-top: 10%;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0vw;
+    background-color: rgba(255, 255, 255, 0.831);
 }
 
 .my{
@@ -336,4 +367,104 @@ h5{
 
 .HYBS{
     width: 80%; 
+}
+
+@media (max-width: 900px) {
+    .menu-container {
+        width: 100%;
+        right: -100%;
+    }
+
+    .brand-logo {
+        width: 100%;
+    }
+
+    .menu-links .link a {
+        font-size: 24px;
+        padding: 10px 0 16px 0;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+    .open-menu{   
+        position: absolute;
+        top: 12vh;
+        left:0vh;
+        width: 15vh;
+        height: 15vh;
+    }
+    h1{
+        top: 7vh;
+        font-size: 9.5vh;
+    }
+    .guava img {   
+        width: 100vh;
+        height: 70%;
+        margin-left: -5%;  
+        margin-top: 30%;
+    }
+    .green {
+        width: 40%;
+        margin-top: -35vh;
+        margin-left: 60%;
+        white-space: nowrap;
+    }
+    .marquee{
+        top: 4vh;
+    }
+    .marquee-1{
+        top: 90vh;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .menu-container {
+        width: 100%;
+        right: -100%;
+    }
+
+    .brand-logo {
+        width: 100%;
+    }
+
+    .menu-links .link a {
+        font-size: 24px;
+        padding: 10px 0 16px 0;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+    .open-menu{ 
+        position: absolute;
+        top: 25vw;
+        left: 35vw;
+        width: 16vh;
+        height: 16vh;
+    }
+    h1{
+        top: 23vh;
+        font-size: 7.5vh;
+    }
+    .guava img {   
+        width: 78vh;
+        height: 70%;
+        margin-left: -4%;  
+        margin-top: 78%;
+    }
+    .green {
+        width: 40%;
+        margin-top: -35vh;
+        margin-left: 60%;
+        white-space: nowrap;
+    }
+    .marquee{
+        top: 4vh;
+    }
+    .marquee-1{
+        top: 90vh;
+    }
 }
