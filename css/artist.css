@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(246, 255, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.brand-logo {
+    position: fixed;
+    top: 80px;
+    width: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+ion-icon {
+    font-size: 40px;
+}
+.open-menu{   
+    position: absolute;
+    top: 6vh;
+    left: 3vh;
+    width: 25vh;
+    height: 25vh;
+    background: url(../images/logo.png) no-repeat 5% 10%;
+    background-size: contain;
+    z-index: 3;
+    transition: filter 0.2s ease-in;
+}
+
+.open-menu:hover {
+    filter: invert(120%);
+}
+
+.close-menu {
+    position: absolute;
+    margin: 2em;
+    top: 0vh;
+    left: 0;
+}
+
+.menu-container {
+    position: fixed;
+    width: 37%;
+    height: 100vh;
+    left: -100%;
+    z-index: 4;
+    background: rgb(255, 255, 246);
+}
+
+.menu-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(246, 255, 0, 0.831);
+    margin: 10px 0;
+    padding: 30px 0 16px 0;
+}
+
+.menu-links .link a {
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+}
+
+
+.project__container {
+    width: 70%;
+    margin: auto auto;
+    /* border: 1px solid #5c5c5c; */
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+}
+
+.project__container-title h1{
+    color: rgb(0, 0, 0);
+    padding-top: 5%;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 140px;
+    text-decoration: none;
+}
+/* h1 { 
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 3vw;
+}*/
+
+.box1 {
+    position: absolute;
+    top: 30vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2vw;
+    margin: 4vw;
+}
+
+.box2 {
+    position: relative;
+    top: 20vh;
+    left: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2vw;
+    margin: 4vw;
+}
+h3 {
+    text-align: left;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    padding: 23px;
+    background-color: rgba(255, 255, 255, 0.5);
+    white-space: pre;
+}
+
+/* .WAVE h3 { 
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}*/
+
+.my {
+    width: 100%;
+}
+
+/* .box2 { 
+    position: absolute;
+    top: 50vh;
+    left: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.831);
+    margin: 2vw;
+}*/
+@media (max-width: 900px) {
+    .menu-container {
+        width: 100%;
+        right: -100%;
+    }
+
+    .brand-logo {
+        width: 100%;
+    }
+
+    .menu-links .link a {
+        font-size: 24px;
+        padding: 10px 0 16px 0;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+    .open-menu{   
+        position: absolute;
+        top: 3vh;
+        left: 2vh;
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .project__container-title h1 {
+        padding: 10% 0;
+        font-size: 100px;
+    }
+    .project__container {
+        width: 80%;
+        margin: 0px auto;
+    }
+}
+
+
+@keyframes tada {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .project__container-title h1 {
+        padding: 40% 0 10% 0;
+        font-size: 60px;
+    }
+    .project__container {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .open-menu{ 
+        position: absolute;
+        top: 2vw;
+        left: 35vw;
+        width: 15vh;
+        height: 15vh;
+    }
+}
