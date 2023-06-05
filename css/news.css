@@ -152,9 +152,9 @@ ion-icon {
 }
 .word1 {
     position: relative;
-    width: 50%;
+    width: 85%;
     height: 200px;
-    transform: translate(-20%, -110%);
+    transform: translate(-50%, 25%);
     background-color: rgba(255, 255, 255, 0.531);
     color: rgb(0, 0, 0);
     padding: 60px 0;
@@ -172,38 +172,73 @@ ion-icon {
     left: 4%;
     text-align: center;
   }
-.word2 {
+  
+  .word2 {
     position: relative;
-    width: 50%;
+    width: 85%;
     height: 200px;
-    transform: translate(50%, -260%);
-    background-color: rgba(255, 255, 255, 0.531);
-    color: rgb(0, 0, 0);
-    padding: 60px 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-.word3 {
-    position: relative;
-    width: 50%;
-    height: 200px;
-    transform: translate(20%, -400%);
+    transform: translate(50%, 25%);
     background-color: rgba(255, 255, 255, 0.531);
     color: rgb(0, 0, 0);
     padding: 60px 0;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
-  .word4 {
+  .word2 p{
+    position: absolute;
+    left: 4%;
+    text-align: left;
+  }
+  .word2 h1{
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    text-align: center;
+  }
+
+  .word3 {
     position: relative;
-    width: 50%;
+    width: 85%;
     height: 200px;
-    transform: translate(-30%, -520%);
+    transform: translate(-70%, 25%);
     background-color: rgba(255, 255, 255, 0.531);
     color: rgb(0, 0, 0);
     padding: 60px 0;
     opacity: 0;
     transition: opacity 0.3s ease;
+  }
+  .word3 p{
+    position: absolute;
+    left: 4%;
+    text-align: left;
+  }
+  .word3 h1{
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    text-align: center;
+  }
+  .word4 {
+    position: relative;
+    width: 85%;
+    height: 200px;
+    transform: translate(80%, 25%);
+    background-color: rgba(255, 255, 255, 0.531);
+    color: rgb(0, 0, 0);
+    padding: 60px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .word4 p{
+    position: absolute;
+    left: 4%;
+    text-align: left;
+  }
+  .word4 h1{
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    text-align: center;
   }
   
 .NEWS-images:hover .word1, .NEWS-images:hover .word2, .NEWS-images:hover .word3, .NEWS-images:hover .word4{
@@ -218,17 +253,18 @@ ion-icon {
 }
 
 .project__image-one {
+    position: relative;
+    top: 30px;
+    left: -20px;
     background: url(../images/hybs-news.jpeg) no-repeat 50% 50%;
     background-size: cover;
-    position: relative;
-    top: 80px;
 }
   
 
 
 .project__image-two {
     position: relative;
-    top: -400px;
+    top: 150px;
     left: -260px;
     background: url(../images/menitrust-news.jpeg) no-repeat 50% 50%;
     background-size: cover;
@@ -236,23 +272,23 @@ ion-icon {
 
 .project__image-three {
     position: relative;
-    top: -830px;
+    top: -10px;
     left: 300px;
-    background: url(../images/img-three.jpeg) no-repeat 50% 50%;
+    background: url(../images/wave1.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .project__image-four {
     position: relative;
-    top: -1200px;
-    left: -100px;
-    background: url(../images/img-four.jpeg) no-repeat 50% 50%;
+    top: -10px;
+    left: -300px;
+    background: url(../images/go.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .project-next-link {
     position: relative;
-    top: -100px;
+    top: 1200px;
     width: 100%;
     height: 400px;
     display: flex;
@@ -306,14 +342,10 @@ ion-icon {
     }
 
     .project__image {
-        width: 90%;
+        width: 80%;
     }
 
-    .project__image-one, .project__image-two, .project__image-three, .project__image-four {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
+
     .open-menu{   
         position: absolute;
         top: 3vh;
@@ -321,7 +353,66 @@ ion-icon {
         width: 15vh;
         height: 15vh;
     }
+    .word1 {
+        height: 300px;
+        transform: translate(-20%, 10%);
+      }
+      .word1 p, .word2 p, .word3 p, .word4 p{
+        font-size: 18px;
+        top: 26%;
+      }
+      .word1 h1, .word2 h1, .word3 h1, .word4 h1{
+        font-size: 30px;
+        top: 6%;
+      }
+      .word2 {
+        width: 110%;
+        height: 300px;
+        transform: translate(50%, 10%);
+      }
+      .word3 {
+        width: 110%;
+        height: 300px;
+        transform: translate(-50%, 10%);
+      }
+      .word4 {
+        width: 110%;
+        height: 300px;
+        transform: translate(40%, 10%);
+      }
+    .project__image-one {
+        top: 20px;
+        left: 0px;
+    }
+    .project__image-two {
+        top: -100px;
+        left: -100px;
+    }  
+    .project__image-three {
+        top: -200px;
+        left: 100px;
+    }
+    
+    .project__image-four {
+        top: -400px;
+        left: -80px;
+    }
+    .project-next-link {
+        top: 1150px;
+        width: 100%;
+        height: 10px;
+    }
+    .project-next-link a {
+        font-size: 60px;
+    }
+    .project-next-link {
+        top: 1300px;
+    }
+    .project-next-link a {
+        font-size: 120px;
+    }
 }
+
 @media (max-width: 500px) {
 
     .project__container-title h1 {
@@ -339,4 +430,77 @@ ion-icon {
         width: 15vh;
         height: 15vh;
     }
+    .word1 {
+        height: 300px;
+        transform: translate(-20%, 10%);
+      }
+      .word1 p{
+        font-size: 15px;
+        top: 26%;
+      }
+      .word1 h1{
+        font-size: 20px;
+        top: 6%;
+      }
+      .word2 {
+        height: 300px;
+        transform: translate(50%, 10%);
+      }
+      .word2 p{
+        font-size: 15px;
+        top: 26%;
+      }
+      .word2 h1{
+        font-size: 20px;
+        top: 6%;
+      }
+      .word3 {
+        height: 300px;
+        transform: translate(-70%, 10%);
+      }
+      .word3 p{
+        font-size: 15px;
+        top: 26%;
+      }
+      .word3 h1{
+        font-size: 20px;
+        top: 6%;
+      }
+      .word4 {
+        height: 300px;
+        transform: translate(80%, 10%);
+      }
+      .word4 p{
+        font-size: 15px;
+        top: 26%;
+      }
+      .word4 h1{
+        font-size: 20px;
+        top: 6%;
+      }
+    .project__image-one {
+        top: -50px;
+    }
+    .project__image-two {
+        top: -100px;
+        left: -100px;
+    }  
+    .project__image-three {
+        top: -200px;
+        left: 100px;
+    }
+    
+    .project__image-four {
+        top: -400px;
+        left: -80px;
+    }
+    .project-next-link {
+        top: 1150px;
+        width: 100%;
+        height: 10px;
+    }
+    .project-next-link a {
+        font-size: 60px;
+    }
+
 }
