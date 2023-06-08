@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | MEN I TRUST</title>
+    <link rel="stylesheet" href="css/about-2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+</head>
+
+<body id="js-scroll">
+    <div class="wrapper">
+
+        <!-- menu -->
+        <nav class="menu">
+            <div imgclass="menu__logo">
+                <a href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+            </div>
+            <div class="menu__items">
+                <div class="menu__items-link active"><a href="artist.html">ARTISTS</a></div>
+            </div>
+        </nav>
+
+        <!-- about-section -->
+        <div class="about__container" data-scroll-section>
+            <p class="about__container-data" data-scroll>來自加拿大的Montreal獨立樂團，MEN I TRUST由貝斯手Jessy、鍵盤手Dragos與身兼吉他手的主唱Emma，三人組成，在2014年發行了同名專輯。<br></br><br>
+                沒有加入任何唱片公司，也沒有大張旗鼓的曝光動作，僅僅靠著網路與樂迷之間口耳相傳，魅力卻悄悄蔓延至世界，擄獲樂迷們的心。<br></br><br>
+                不隨波逐流的獨立精神與低調氣息，曲風柔順、旋律沈靜。<br></br><br>主唱Emma嗓音夢幻，三人合音緩緩。<br></br><br>簡約的節奏裡，有勾人起舞的Bass Line，也有晶瑩的Electronic Beats ，讓你忍不住用腳尖跟著打拍。<br></br><br>
+                聽著他們的音樂，就好像隨其漂浮在一道沒有終點的浪，在音樂裡使用大量重複的和弦，跌宕起伏，但仍有許多空白、飄逸和和緩，時而輕快俏皮，清新不膩。</p>
+            <p data-scroll> 
+                <span class="about__container-contact-link"><a href="https://www.youtube.com/@MenITrust" target="_blank">@YOUTUBE</a></span></p>
+            <p data-scroll> 
+                <span class="about__container-contact-link"><a href="https://open.spotify.com/artist/3zmfs9cQwzJl575W1ZYXeT?si=HpqxrGXsQLiLOipgl99jBw" target="_blank">@SPOTIFY</a></span></p>
+            <p data-scroll> 
+                <span class="about__container-contact-link"><a href="https://www.instagram.com/menitrust/" target="_blank">@INSTAGRAM</a></span></p>
+        </div>
+
+        <div class="cursor-follow"></div>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.75
+        });
+
+        // div following mouse 
+        TweenMax.from(".cursor-follow", 2, {
+            delay: 1,
+            opacity: 0
+        });
+
+        follower = document.querySelector('.cursor-follow');
+
+        posX = 0;
+        posY = 0;
+        mouseX = 0;
+        mouseY = 0;
+
+        TweenMax.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                TweenMax.set(follower, {
+                    css: {
+                        left: posX - 40,
+                        top: posY - 40,
+                    }
+                });
+            }
+        });
+
+        document.addEventListener("mousemove", function (e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+        });
+    </script>
+</body>
+
+</html>

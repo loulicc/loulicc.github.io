@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | YOURA</title>
+    <link rel="stylesheet" href="css/about-3.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+</head>
+
+<body id="js-scroll">
+    <div class="wrapper">
+
+        <!-- menu -->
+        <nav class="menu">
+            <div imgclass="menu__logo">
+                <a href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+            </div>
+            <div class="menu__items">
+                <div class="menu__items-link active"><a href="artist.html">ARTISTS</a></div>
+            </div>
+        </nav>
+
+        <!-- about-section -->
+        <div class="about__container" data-scroll-section>
+            <p class="about__container-data" data-scroll>Youra是韓國新生代知名歌手，新穎的歌曲風格、細膩的情感表達以及獨特的發音腔調引起了聽眾的關注。<br></br><br>
+                在韓國SBS音樂比賽節目《The Fan》中作為朴正炫推薦的歌手參賽，以亮眼的表現獲得了大眾的認可。<br></br><br>
+                2018年推出個人單曲《my》，之後通過EP《Bside》展現了自己的特色，還與Giriboy、Groovy Room等韓國知名嘻哈藝人合作，進一步擴大了在歌謠界的影響力。<br></br><br>
+                迷幻的音樂色彩加上清爽的歌詞，勾勒出畫面感十足的音樂氛圍，讓人彷彿置身夏日有些炫目的陽光下的海灘邊。<br></br><br>
+                </p>
+            <p data-scroll> 
+                <span class="about__container-contact-link"><a href="https://www.youtube.com/@youra_official" target="_blank">@YOUTUBE</a></span></p>
+            <p data-scroll> 
+                <span class="about__container-contact-link"><a href="https://open.spotify.com/artist/5q9adPv91NFr8q2ZcKmX0V?si=OBOPuvfGSw-uwou2ocjoAQ" target="_blank">@SPOTIFY</a></span></p>
+            <p data-scroll> 
+                <span class="about__container-contact-link"><a href="https://www.instagram.com/you.ra/" target="_blank">@INSTAGRAM</a></span></p>
+        </div>
+
+        <div class="cursor-follow"></div>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.75
+        });
+
+        // div following mouse 
+        TweenMax.from(".cursor-follow", 2, {
+            delay: 1,
+            opacity: 0
+        });
+
+        follower = document.querySelector('.cursor-follow');
+
+        posX = 0;
+        posY = 0;
+        mouseX = 0;
+        mouseY = 0;
+
+        TweenMax.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                TweenMax.set(follower, {
+                    css: {
+                        left: posX - 40,
+                        top: posY - 40,
+                    }
+                });
+            }
+        });
+
+        document.addEventListener("mousemove", function (e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+        });
+    </script>
+</body>
+
+</html>

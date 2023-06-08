@@ -1,28 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="TW">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LILICC'S PLAYLIST</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <link rel="stylesheet" href="styles.css" />
-
-        <!-- ionicons -->
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-
-        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-        <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     </head>
     <body>
-        <div class="wrapper-1">
-            <div class="hero-section">
-                <div class="open-menu"></div>
-                <div class="hero-img"></div>
-            </div>
+            <div class="open-menu"></div>
             <div class="menu-container">
                 <div class="close-menu"><ion-icon name="close-outline"></ion-icon></div>
                 <div class="brand-logo">
@@ -41,10 +30,9 @@
                         <a href="artist.html">ARTISTS</a>
                     </div>
                     <div class="link menu-link-4">
-                        <a href="#">RELEASES</a>
+                        <a href="releases.html">RELEASES</a>
                     </div>
                 </div>
-                
                 </div>
             </div>
         </div>
@@ -53,18 +41,24 @@
         </div>
         <div class="marquee">
             <span> LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist /
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
             </span>
         </div>
         <div class="marquee-1">
             <span> LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
-                    LILI CC's Playlist/ LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist /
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
+                    LILI CC's Playlist / LILI CC's Playlist / LILI CC's Playlist / 
             </span>
         </div>
         <div class="SPECIAL">
@@ -117,31 +111,5 @@
             <img src="green.png" alt="" onclick="scrollToTop()">
         </div>
         <script src="common.js"></script>
-        <script type="text/javascript">
-            var t1 = new TimelineMax({ paused: true });
-
-            t1.to(".menu-container", 0.4, {
-                left: "0%",
-            });
-
-            t1.staggerFrom(".link", 0.4, { opacity: 0 }, 0.1, "-=0.2");
-
-            t1.reverse();
-            $(document).on("click", ".open-menu", function () {
-                t1.reversed(!t1.reversed());
-            });
-            $(document).on("click", ".close-menu", function () {
-                t1.reversed(!t1.reversed());
-            });
-        </script>
-        <script type="text/javascript">
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
-        </script>
     </body>
 </html>
