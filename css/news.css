@@ -176,7 +176,7 @@ ion-icon {
   .word2 {
     position: relative;
     width: 85%;
-    height: 200px;
+    height: 230px;
     transform: translate(50%, 25%);
     background-color: rgba(255, 255, 255, 0.531);
     color: rgb(0, 0, 0);
@@ -199,7 +199,7 @@ ion-icon {
   .word3 {
     position: relative;
     width: 85%;
-    height: 200px;
+    height: 320px;
     transform: translate(-70%, 25%);
     background-color: rgba(255, 255, 255, 0.531);
     color: rgb(0, 0, 0);
@@ -274,7 +274,7 @@ ion-icon {
     position: relative;
     top: -10px;
     left: 300px;
-    background: url(../images/wave1.jpeg) no-repeat 50% 50%;
+    background: url(../images/wave-news.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 

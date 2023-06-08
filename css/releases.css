@@ -101,57 +101,40 @@ ion-icon {
     font-size: 140px;
     text-decoration: none;
 }
-
 .box1 {
-    position: absolute;
-    top: 30vh;
+margin: 10%;
     left: 0%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2vw;
-    margin: 4vw;
-}
-
-.box2 {
-    position: relative;
-    top: 25vh;
-    left: 0%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2vw;
-    margin: 4vw;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 3vw;
+    background-color: rgba(255, 255, 255, 0.831);
 }
 h3 {
     text-align: left;
-    font-size: 2vw;
+    font-size: 40px;
     font-weight: bold;
     font-style: italic;
-    padding: 23px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    white-space: pre;
+}
+p {
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    padding: 15px;
     background-color: rgba(255, 255, 255, 0.5);
     white-space: pre;
 }
 
-
-
-.my {
+.wave{
     width: 100%;
     transition: transform 0.3s ease;
 }
-.my:hover {
-    transform: translateY(-20px);
+.wave:hover {
+    transform: scale(1.05);
   }
-
-/* .box2 { 
-    position: absolute;
-    top: 50vh;
-    left: 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.831);
-    margin: 2vw;
-}*/
-@media (max-width: 900px) {
+  @media (max-width: 900px) {
     .menu-container {
         width: 100%;
         right: -100%;
@@ -190,13 +173,12 @@ h3 {
         grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
         grid-gap: 4vw;
     }
-    .box2 {
-        top: 21vh;
-        grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-        grid-gap: 37.5vw 4vw;
-    }
     h3 {
-        font-size: 3vw;
+        font-size: 2vw;
+    }
+    p {
+        font-size: 1vw;
+        padding: 5%;
     }
 }
 
@@ -242,14 +224,13 @@ h3 {
         width: 15vh;
         height: 15vh;
     }
-    .box2 {
-        top: 30vh;
-        grid-gap: 73vw;
-    }
     .box1 {
         top: 30vh;
     }
     h3 {
         font-size: 6vw;
+    }
+    p {
+        font-size: 5vw;
     }
 }
